@@ -8,7 +8,7 @@ body {
 nav {
   background-color: #3d3d3d;
   width: 100%;
-  height: 40px;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,60 +23,59 @@ h6 {
 }
 
 nav span {
-  word-spacing: 20px;
+  word-spacing: 4vh;
 }
 
 a {
-  text-decoration: none;
-  color: #9ca19a;
+  color: #3e7628;
   font-size: 0.5rem;
   font-weight: 900;
+  padding: 100px;
 }
 
-span a:hover {
-  background-color: #1d0dcf;
-  padding: 3%;
+a:hover {
+  background: blue;
+}
+
+nav span a:hover {
+  color: red;
+  height: 12%;
+  padding: 70%;
 }
 
 @media screen and (max-width: 750px) {
   nav {
-    background-color: #343436;
-    width: 100%;
-    height: 50px;
     display: flex;
     flex-direction: column;
   }
   h6 {
-    color: white;
     font-weight: 600;
     font-size: 0.9rem;
     margin-top: 0.5rem;
     margin-bottom: 0rem;
   }
   a {
-    text-decoration: none;
-    color: #9ca19a;
     font-size: 0.4rem;
-    font-weight: 90000;
+    font-weight: 900;
     margin-top: 0rem;
   }
 }
 .background {
   margin-top: 0%;
   width: 100%;
-  height: 200px;
+  height: 30vh;
 }
 
 @media screen and (max-width: 750px) {
   .background {
-    height: 100px;
+    height: 15vh;
   }
 }
 header {
   margin-top: -1.5%;
   background-color: rgb(239, 231, 223);
   width: 100%;
-  height: 200px;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,10 +111,105 @@ autor {
 
 @media screen and (max-width: 750px) {
   header {
-    height: 100px;
+    height: 15vh;
   }
   header p {
     font-size: 0.6rem;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 50vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 15%;
+  height: 40vh;
+  margin-top: 4%;
+  background-color: rgb(239, 231, 223);
+}
+
+.card h4 {
+  font-size: 0.8rem;
+  padding: 9%;
+  margin-top: 0%;
+  margin-bottom: -10%;
+}
+
+.card p {
+  font-size: 0.5rem;
+  padding: 9%;
+  margin-top: -2%;
+  color: #8a8775;
+}
+
+.card i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-top: 5%;
+  width: 15vh;
+  height: 15vh;
+  background-color: white;
+  color: #499ee3;
+}
+
+.card span {
+  margin-top: 2%;
+  color: #499ee3;
+  font-size: 0.6rem;
+}
+
+@media screen and (max-width: 750px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    height: 40vh;
+  }
+  .card i {
+    border-radius: 50%;
+    margin-top: 5%;
+    width: 5vh;
+    height: 5vh;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 30vh;
+    text-align: center;
+  }
+  .card h4 {
+    font-size: 0.5rem;
+  }
+  .card span {
+    font-size: 0.3rem;
+  }
+  .card p {
+    font-size: 0.4rem;
+    padding: 10%;
   }
 }
 
