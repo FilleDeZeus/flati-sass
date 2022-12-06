@@ -27,20 +27,10 @@ nav span {
 }
 
 a {
-  color: #3e7628;
+  text-decoration: none;
+  color: #9ca19a;
   font-size: 0.5rem;
   font-weight: 900;
-  padding: 100px;
-}
-
-a:hover {
-  background: blue;
-}
-
-nav span a:hover {
-  color: red;
-  height: 12%;
-  padding: 70%;
 }
 
 @media screen and (max-width: 750px) {
