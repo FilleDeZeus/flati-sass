@@ -104,13 +104,16 @@ main
     flex-direction: column
     justify-content: center
     align-items: center
+    margin-left: 10%
+    margin-right: 10%
 
 // --------CARD------
 
 .cards 
     display: flex
     flex-direction: row
-    justify-content: space-around
+    justify-content: center
+    gap: 5%
     width: 100%
     height: 50vh
 
@@ -187,3 +190,51 @@ main
     .card p
         font-size: 0.4rem
         padding: 10%
+
+// ---------RECENT WORK------
+
+.recentwork
+    display: flex
+    flex-direction: row
+    justify-content: center
+    gap: 25%
+    width: 100%
+    height: 50vh
+
+.recentwork .text
+    display: flex
+    flex-direction: column
+    width: 35%
+
+.recentwork .text p
+    font-size: 0.5rem
+
+.recentwork .text p:nth-child(2)
+    color: #a39a69
+
+.recentwork .text h3,p:nth-child(3)
+    color: #716e5e
+
+.recentwork .text h3
+    font-size: 0.8rem
+
+input
+    background-color: #499ee3
+    border: #499ee3 1px solid
+    font-size: 0.4rem
+    border-radius: 10px
+    height: 20px
+    width: 50px
+
+.image
+    display: flex
+    flex-direction: row
+    align-items: center
+    text-align: center
+    width: 15%
+    height: 40vh
+    margin-top: 4%
+    background-color: rgb(43, 50, 78)
+
+img
+    height: 30%
